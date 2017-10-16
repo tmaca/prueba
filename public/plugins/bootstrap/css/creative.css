@@ -41,7 +41,8 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #84d074 !important; }
+  background-color: #84d074 !important;
+margin-top:150px;}
 
 .bg-dark {
   color: white;
@@ -51,7 +52,8 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: #d8d8d8;}
 
 .section-heading {
   margin-top: 0; }
@@ -322,8 +324,8 @@ header.masthead {
     background-color: #eb3812; }
   .btn-primary:hover {
     color: white;
-    border-color: #e13612;
-    background-color: #eb3812; }
+    border-color: #bee11c;
+    background-color: #eb667c; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;

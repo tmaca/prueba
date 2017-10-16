@@ -16,6 +16,5 @@ Route::get('/', function () {
 });
 
 
-Route::post('/formu', function () {
-    return view('formu');
-});
+
+Route::post('/formu', 'usuariosController@insertarUsuarios');

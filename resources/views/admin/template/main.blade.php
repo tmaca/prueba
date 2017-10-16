@@ -60,7 +60,6 @@
 
 <header class="masthead">
     <div class="video-responsive">
-        <div style="width: 100%; height: 100%;position: absolute; top: 0px; left: 0px; z-index: 10;"></div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hW9PUzl7j9w?autoplay=true&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
     </div>
 
@@ -87,10 +86,10 @@
                     <input type="hidden" name="_token" value=" {{ csrf_token() }} " ><br>
                     {{ csrf_field() }}
                     <p>Su nombre: <input type="text" name="nombre"> </p>
-                    <p>Su edad: <input type="text" name="edad"></p>
-                    <p><input type="submit" /></p>
+                    <p>Su edad: <input type="number" name="edad"></p>
+                    <p><input type="submit" class="btn btn-default btn-xl js-scroll-trigger"/></p>
                 </form>
-                <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Enviar</a>
+                <!--<a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Enviar</a>-->
             </div>
         </div>
     </div>
