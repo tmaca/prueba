@@ -59,8 +59,9 @@
 </nav>
 
 <header class="masthead">
+
     <div class="video-responsive">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hW9PUzl7j9w?autoplay=true&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DFEtnhfQcqI?autoplay=true&control&loop=1" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="header-content">
@@ -74,6 +75,7 @@
     </div>
 
 </header>
+
 
 <section class="bg-primary" id="about">
     <div class="container">
@@ -89,6 +91,17 @@
                     <p>Su edad: <input type="number" name="edad"></p>
                     <p><input type="submit" class="btn btn-default btn-xl js-scroll-trigger"/></p>
                 </form>
+                <!--excepcion-->
+                @if(! $errors -> isEmpty())
+                    <div class="alert">
+                        <p>ERROR al insertar los datos</p>
+                        <ul>
+                            @foreach($errors -> all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+            @endif
                 <!--<a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Enviar</a>-->
             </div>
         </div>
@@ -137,7 +150,7 @@
         </div>
     </div>
 </section>
-
+<!--
 <section class="p-0" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
@@ -234,11 +247,12 @@
         </div>
     </div>
 </section>
-
+-->
 <div class="call-to-action bg-dark">
     <div class="container text-center">
-        <h2>Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <h2>Quienes somos</h2>
+        <!--<a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>-->
+    <p>Lorem ipsum...</p>
     </div>
 </div>
 

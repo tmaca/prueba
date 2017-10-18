@@ -18,3 +18,4 @@ Route::get('/', function () {
 
 
 Route::post('/formu', 'usuariosController@insertarUsuarios');
+
